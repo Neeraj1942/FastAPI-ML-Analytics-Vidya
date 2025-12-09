@@ -25,3 +25,11 @@ def apply_label(inference):
     elif inference[0] == 0:
         return "<=50K"
 (used to for the output to convert the string output back to our data like under/over 50k)
+
+fbeta = f1_score(y, preds, zero_division=1)
+precision = precision_score(y, preds, zero_division=1)
+recall = recall_score(y, preds, zero_division=1)
+
+By default, scikit-learn raises a warning or returns 0 if this happens.
+zero_division=1 → If division by zero occurs, the metric is set to 1.
+zero_division=0 → If division by zero occurs, the metric is set to 0.
