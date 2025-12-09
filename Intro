@@ -6,6 +6,10 @@ fast API ->
 1. uses 'swagger ui and Redoc' to automatically generate interactive APi documentation
 2. uses 'type hints' to help with automatic validation
 
+Swagger UI & ReDoc: Interactive and readable API docs.
+Type hints: Tell Python/FastAPI what kind of data is expected, enabling automatic validation and documentation.
+
+major differences ->
 | Feature                   | Flask                               | FastAPI                                      |
 | ------------------------- | ----------------------------------- | -------------------------------------------- |
 | **Type**                  | Micro web framework                 | Modern async web framework                   |
