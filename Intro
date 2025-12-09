@@ -1,3 +1,49 @@
 types of API -> 
 FastAPI : Asynchronous faster
 Flask : Synchronus slower
+
+fast API ->
+1. uses 'swagger ui and Redoc' to automatically generate interactive APi documentation
+2. uses 'type hints' to help with automatic validation
+
+| Feature                   | Flask                               | FastAPI                                      |
+| ------------------------- | ----------------------------------- | -------------------------------------------- |
+| **Type**                  | Micro web framework                 | Modern async web framework                   |
+| **Performance**           | Synchronous, slower under high load | Asynchronous, faster for concurrent requests |
+| **Ease of Use**           | Simple, beginner-friendly           | Slightly steeper learning curve              |
+| **Data Validation**       | Manual (needs extra libraries)      | Automatic with Pydantic                      |
+| **Automatic Docs**        | No (manual Swagger setup)           | Yes, Swagger / ReDoc auto-generated          |
+| **ML Model Deployment**   | Good for small prototypes           | Better for scalable, production-ready APIs   |
+| **Community & Libraries** | Very mature, lots of tutorials      | Growing fast, production-oriented            |
+
+CRUD : Create Read Update Delete 
+
+| Method     | CRUD Action | Purpose                            | ML/API Perspective                              |
+| ---------- | ----------- | ---------------------------------- | ----------------------------------------------- |
+| **GET**    | Read        | Retrieve data from the server      | Fetch ML model predictions or dataset           |
+| **POST**   | Create      | Send new data to the server        | Submit new data for training or inference       |
+| **PUT**    | Update      | Update existing data on the server | Update an existing ML model or dataset          |
+| **DELETE** | Delete      | Remove data from the server        | Delete a dataset, model, or record from storage |
+
+Https starus codes ->
+| Category              | Status Code               | Meaning                               | One-Line Explanation                                         |
+| --------------------- | ------------------------- | ------------------------------------- | ------------------------------------------------------------ |
+| **1xx Informational** | 100 Continue              | Request received, client can continue | Server signals client to continue sending request            |
+|                       | 101 Switching Protocols   | Switching to new protocol             | Server agrees to switch protocols (e.g., HTTP → WebSocket)   |
+| **2xx Success**       | 200 OK                    | Success                               | Request succeeded, server returned requested data            |
+|                       | 201 Created               | Success                               | New resource successfully created                            |
+|                       | 204 No Content            | Success                               | Request succeeded but no content returned (e.g., DELETE)     |
+| **3xx Redirection**   | 301 Moved Permanently     | Redirection                           | Resource moved permanently to a new URL                      |
+|                       | 302 Found                 | Redirection                           | Resource temporarily found at a different URL                |
+|                       | 304 Not Modified          | Redirection                           | Resource not modified since last request; use cached version |
+| **4xx Client Error**  | 400 Bad Request           | Client Error                          | Request invalid or cannot be processed                       |
+|                       | 401 Unauthorized          | Client Error                          | Authentication required or failed                            |
+|                       | 403 Forbidden             | Client Error                          | Server refuses to authorize request                          |
+|                       | 404 Not Found             | Client Error                          | Resource does not exist                                      |
+|                       | 405 Method Not Allowed    | Client Error                          | HTTP method not supported for this resource                  |
+| **5xx Server Error**  | 500 Internal Server Error | Server Error                          | Unexpected server error prevented request fulfillment        |
+|                       | 502 Bad Gateway           | Server Error                          | Invalid response from upstream server                        |
+|                       | 503 Service Unavailable   | Server Error                          | Server temporarily unable to handle request                  |
+|                       | 504 Gateway Timeout       | Server Error                          | No timely response from upstream server                      |
+
+
