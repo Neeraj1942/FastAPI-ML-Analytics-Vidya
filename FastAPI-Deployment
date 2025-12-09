@@ -15,3 +15,13 @@ Accuracies -
 
 Data.py -> function to preproces the data and then we also use 
 apply_label() to convert the output string into readable output eg- >50k or <50k
+
+And only 'inference' is passed as an object because this helps seperate it from training.
+
+def apply_label(inference):
+    """ Convert the binary label in a single inference sample into string output."""
+    if inference[0] == 1:
+        return ">50K"
+    elif inference[0] == 0:
+        return "<=50K"
+(used to for the output to convert the string output back to our data like under/over 50k)
