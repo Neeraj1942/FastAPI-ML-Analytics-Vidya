@@ -1,1 +1,8 @@
+we use xgboost as the model.
 
+we do data preprocessing - 
+1. loading the dataset
+2. removing duplicates 
+3. handling missing values
+4. creating a new feature
+5. Encoding categorical features using label encoder
