@@ -36,7 +36,11 @@ zero_division=0 → If division by zero occurs, the metric is set to 0.
 
 The scale_pos_weight = len(y_train[y_train == 0]) / len(y_train[y_train == 1]) 
 this is used in XGBClassifer to tells the classifer to consider this imbalnce, for the positive or negative class
-basically , this heklps us to estimate the postive class properly.
+basically , this helps us to estimate the postive class properly.
+
+Inference here is a prediction made by the model, 
+y is the seperate clas with only labels,
+x is the class without the labels and the rest columns
 
 
 
