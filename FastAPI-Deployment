@@ -41,6 +41,8 @@ basically , this helps us to estimate the postive class properly.
 Inference here is a prediction made by the model, 
 y is the seperate clas with only labels,
 x is the class without the labels and the rest columns
+You feed new feature data X (without needing the label) into the trained model:
+preds = inference(model, X_new)
 
 
 
